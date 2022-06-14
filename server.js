@@ -52,7 +52,7 @@ const printWelcomeMessage = () => {
   try {
     getLocalIp().then(({ address }) => {
       const ip = process.env.HOST || address || 'localhost';
-      console.log(printMessage(ip, port, isDocker)); // eslint-disable-line no-console
+      
     });
   } catch (e) {
     // Fetching info for welcome message failed, print simple msg instead
